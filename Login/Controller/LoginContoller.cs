@@ -29,11 +29,11 @@ namespace Login.Controller
         {
             if (_repo.SearchOfuser(logindto))
             {
-                return Ok(new { message = "تم تسجيل الدخول بنجاح ✅" });
+                return Ok(new { message = "yes successfully" });
             }
             else
             {
-                return Unauthorized(new { message = "الإيميل أو الباسورد غير صحيح ❌" });
+                return Unauthorized(new { message = "no error in email or password" });
             }
 
         }
